@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+ <div class="calculator">
+         
+    <h1>Калькулятор стоимости заказов</h1>
+      <button id="calculate">Рассчитать стоимость</button>
+    <div class="vybor">
+        <label for="product">Выберите товар:</label>
+        <select id="product">
+            <option value="product1">Зачет по мат анализу - 1000 ₽</option>
+            <option value="product2">Зачет по дискретке - 2000 ₽</option>
+            <option value="product3">Зачет по диффурам - 3000 ₽</option>
+        </select>
+    </div>
+    <div class="vybor">
+        <label for="kol">Количество товара:</label>
+        <input type="number" id="kol" min="1" value="1">
+    </div>
+    <div class="result">
+        <p>Стоимость заказа: <span id="total">0 ₽</span></p>
+    </div>
+</div>
+  <script src="info.js">
+  </script>
+   </body>
+</html>
